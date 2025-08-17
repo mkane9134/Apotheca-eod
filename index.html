@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>END-OF-DAY APOTHECA</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="background">
+        <h1>
+            <img src="OIP.png" alt="Heading text">
+        </h1>
+        <h2>
+            EOD Deposit & Drawer Calculator
+        </h2>
+        <h2 id="instructions">
+            Instructions: Enter the quantity of each denomination and your expected drawer balance.
+        </h2>
+        <form id="form">
+            <h3>Coins</h3>
+            <div class="field">
+                <label for="pen">Pennies</label>
+                <input type="number" name="pen" id="pen" min="0">
+            </div>
+            <div class="field">
+                <label for="nick">Nickles</label>
+                <input type="number" name="nick" id="nick" min="0">
+                </div>
+            <div class="field">
+                <label for="dime">Dimes</label>
+                <input type="number" name="dime" id="dime" min="0">
+            </div>
+            <div class="field">
+                <label for="quart">Quarters</label>
+                <input type="number" name="quart" id="quart" min="0">
+            </div>
+
+            <h3>Bills</h3>
+            <div class="field">
+                <label for="one">One Dollar Bills</label>
+                <input type="number" name="one" id="one" min="0">
+            </div>
+            <div class="field">
+                <label for="five">Five Dollar Bills</label>
+                <input type="number" name="five" id="five" min="0">
+            </div>
+            <div class="field">
+                <label for="ten">Ten Dollar Bills</label>
+                <input type="number" name="ten" id="ten" min="0">
+            </div>
+            <div class="field">
+                <label for="twenty">Twenty Dollar Bills</label>
+                <input type="number" name="twenty" id="twenty" min="0">
+            </div>
+            <div class="field">
+                <label for="fifty">Fifty Dollar Bills</label>
+                <input type="number" name="fifty" id="fifty" min="0">
+            </div>
+            <div class="field">
+                <label for="hundred">Hundred Dollar Bills</label>
+                <input type="number" name="hundred" id="hundred" min="0">
+            </div>
+            <div class="field">
+                <label for="exp">Expected Drawer Balance</label>
+                <input type="number" name="exp" id="exp" min="100">
+            </div>
+            <br><br>
+        </form>
+        <div id="Summary-panel" class="hidden">
+            <table class="depositSummary">
+                <tr>
+                    <th colspan="2">Drawer and Deposit Summary</th>
+                </tr>
+                <tr>
+                    <td>Expected Amount:</td>
+                    <td id="expectedSum"></td>
+                </tr>
+                <tr>
+                    <td>Counted Amount:</td>
+                    <td id="drawerTotal"></td>
+                </tr>
+                <tr>
+                    <td>Drawer Difference:</td>
+                    <td id="drawerDiff"></td>
+                </tr>
+                <tr>
+                    <td>Left in Drawer:</td>
+                    <td id="leftInDrawer"></td>
+                </tr>
+                <tr>
+                    <td>Deposit Amount:</td>
+                    <td id="depositAmount"></td>
+                </tr>
+            </table><br><br>
+        </div>
+        <div id="Breakdown-panel" class="hidden">
+            <table>
+                <caption>Deposit Calculator</caption>
+                <tr>
+                    <th>Denominations  </th>
+                    <th>Current Count</th>
+                    <th>EOD Drawer Count</th>
+                    <th>Deposit Count</th>
+                </tr>
+                <tr>
+                    <td>Pennies</td>
+                    <td id="pen-current"></td>
+                    <td id="pen-drawer"></td>
+                    <td id="pen-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Nickles</td>
+                    <td id="nick-current"></td>
+                    <td id="nick-drawer"></td>
+                    <td id="nick-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Dimes</td>
+                    <td id="dime-current"></td>
+                    <td id="dime-drawer"></td>
+                    <td id="dime-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Quarters</td>
+                    <td id="quart-current"></td>
+                    <td id="quart-drawer"></td>
+                    <td id="quart-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Dollar Bills</td>
+                    <td id="one-current"></td>
+                    <td id="one-drawer"></td>
+                    <td id="one-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Five Dollar Bills</td>
+                    <td id="five-current"></td>
+                    <td id="five-drawer"></td>
+                    <td id="five-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Ten Dollar Bills</td>
+                    <td id="ten-current"></td>
+                    <td id="ten-drawer"></td>
+                    <td id="ten-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Twenty Dollar Bills</td>
+                    <td id="twenty-current"></td>
+                    <td id="twenty-drawer"></td>
+                    <td id="twenty-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Fifty Dollar Bills</td>
+                    <td id="fifty-current"></td>
+                    <td id="fifty-drawer"></td>
+                    <td id="fifty-deposit"></td>
+                </tr>
+                <tr>
+                    <td>Hundred Dollar Bills</td>
+                    <td id="hundred-current"></td>
+                    <td id="hundred-drawer"></td>
+                    <td id="hundred-deposit"></td>
+                </tr>
+            </table><br>
+        </div>
+        <div class="buttons">
+            <button type="button" id="computeButton" onclick="compute()">SUBMIT</button>
+            <button type="button" id="clear" onclick="clearInputs()">CLEAR</button>
+            <button type="button" id="EODView" onclick="EODView()">EOD VIEW</button>
+        </div>
+        <script src="script.js"></script> 
+    </body>
+</html>

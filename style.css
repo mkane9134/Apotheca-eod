@@ -1,0 +1,83 @@
+.background {
+  background-image: url("Background.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+h1 {
+  background-size: 10%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+th, td {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+}
+
+td:first-child {
+  text-align: right;
+  background-color: white;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+  background-color: #e6e3b0;
+}
+
+th {
+  background-color: #c5e5efc3;
+}
+
+.buttons, h1, h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-left: 100px;
+}
+
+table.calc th:first-child,
+table.calc td:first-child {
+  text-align: left;              
+}
+
+table.depositSummary td:first-child {
+  text-align: left;          
+  width: 65%;
+  background-color: #fff6b0;
+}
+
+table.depositSummary td:last-child {
+  text-align: right;             
+  background-color: #fff6b0;    
+  width: 35%;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; 
+  flex-wrap: nowrap;
+}
+
+.field label {
+  width: 200px;
+  text-align: right;
+  margin-right: 10px;
+  white-space: nowrap;  
+}
+
+.field label input {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
