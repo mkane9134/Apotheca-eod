@@ -1,6 +1,12 @@
 .background {
   min-height: 100vh;
   background-color: #92a07f;
+
+  display: flex;           
+  flex-direction: column;    
+  justify-content: center;   
+  align-items: center;        
+  text-align: center;    
 }
 
 h1 {
@@ -9,7 +15,8 @@ h1 {
 
 table {
   border-collapse: collapse;
-  width: 100%
+  width: auto; 
+  margin: 0 auto; 
 }
 
 th, td {
