@@ -80,3 +80,7 @@ table.depositSummary td:last-child {
 .hidden {
   display: none;
 }
+
+.unhidden {
+  display: contents;
+}
