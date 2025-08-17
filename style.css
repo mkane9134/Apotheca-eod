@@ -1,7 +1,7 @@
 html, body { height: 100%; }   /* helps iOS sizing */
 .background{
   min-height: 100vh;
-  background-image: url("Background.jpg");
+  background-color: #92a07f;
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
