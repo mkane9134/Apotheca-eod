@@ -38,12 +38,8 @@ th {
   text-align: center;
 }
 
-.tableTitle {
+.tableTitles {
   text-align: center;
-}
-
-h3 {
-  margin-left: 100px;
 }
 
 table.calc th:first-child,
