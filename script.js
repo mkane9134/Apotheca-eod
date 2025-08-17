@@ -93,6 +93,7 @@ function EODView() {
   document.getElementById("Summary-panel").classList.remove('hidden');
   document.getElementById("Breakdown-panel").classList.remove('hidden');
   document.getElementById("form").classList.add('hidden');
+  document.getElementById("instructions").classList.add('hidden');
 }
 
 function clearInputs() {
