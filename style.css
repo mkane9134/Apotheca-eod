@@ -1,11 +1,6 @@
-html, body { height: 100%; }   /* helps iOS sizing */
-.background{
+.background {
   min-height: 100vh;
   background-color: #92a07f;
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat; 
-  background-attachment: scroll;
 }
 
 h1 {
@@ -13,8 +8,8 @@ h1 {
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%
+  border-collapse: collapse;
+  width: 100%
 }
 
 th, td {
