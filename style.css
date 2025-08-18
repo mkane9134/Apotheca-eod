@@ -66,10 +66,6 @@ table.depositSummary td:last-child {
   width: 35%;
 }
 
-form {
-  margin-left: -40px;
-}
-
 .field {
   display: flex;
   align-items: center;
